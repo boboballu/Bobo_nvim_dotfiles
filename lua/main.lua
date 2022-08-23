@@ -2,3 +2,4 @@
 require "user.cmp"
 require "user.alpha"
 require "user.toggleterm"
+require "user.telescope"

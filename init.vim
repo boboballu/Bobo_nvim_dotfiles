@@ -30,8 +30,9 @@ Plug 'hrsh7th/cmp-buffer' "vim cmp additions
 Plug 'hrsh7th/cmp-path' "vim cmp additions
 Plug 'hrsh7th/cmp-cmdline' "vim cmp additions
 Plug 'hrsh7th/nvim-cmp' "vim cmp additions
-
 Plug 'akinsho/toggleterm.nvim', {'tag' : 'v2.*'} "toggleterm plugin
+Plug 'nvim-lua/plenary.nvim' "telescope prerequisite
+Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.0' } "telescope. nvim grep tool
 call plug#end()
 
 set encoding=UTF-8
