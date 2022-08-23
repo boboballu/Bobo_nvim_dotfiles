@@ -1,7 +1,10 @@
-" Tarun (tarungovindk) nvim rc file ##
-" Sat Feb 26 09:54:02 PST 2022 ####
-
-" Source the basic keybindings from ~/.vimrc
+" Author: Tarun (tarungovindk) nvim configs "
+" Date: Mon Aug 22 09:54:02 PST 2022 ####
+" Features:
+"	- Mimics vscode's best keybindings
+"	- <ctrl + Space> to access most keybindings
+"	- whichkey ` to see all keybindings
+" Source the basic keybindings from ~/.vimrc (will soon be integrated here)
 source ~/.vimrc.common
 
 " Only special keybindings unique to nvim and plugins are listed here
