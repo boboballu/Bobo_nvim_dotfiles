@@ -33,6 +33,7 @@ Plug 'hrsh7th/nvim-cmp' "vim cmp additions
 Plug 'akinsho/toggleterm.nvim', {'tag' : 'v2.*'} "toggleterm plugin
 Plug 'nvim-lua/plenary.nvim' "telescope prerequisite
 Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.0' } "telescope. nvim grep tool
+Plug 'folke/which-key.nvim' "which-key: keymap help menu; invoked with `
 call plug#end()
 
 set encoding=UTF-8
