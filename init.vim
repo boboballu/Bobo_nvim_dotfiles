@@ -30,6 +30,8 @@ Plug 'hrsh7th/cmp-buffer' "vim cmp additions
 Plug 'hrsh7th/cmp-path' "vim cmp additions
 Plug 'hrsh7th/cmp-cmdline' "vim cmp additions
 Plug 'hrsh7th/nvim-cmp' "vim cmp additions
+
+Plug 'akinsho/toggleterm.nvim', {'tag' : 'v2.*'} "toggleterm plugin
 call plug#end()
 
 set encoding=UTF-8
@@ -79,6 +81,7 @@ let g:VM_maps = {}
 let g:VM_maps['Find Under']         = '<C-d>'           " replace C-n
 let g:VM_maps['Find Subword Under'] = '<C-d>'           " replace visual C-n
 
+"------------Toggleterm-----------------"
 " Horizontal Scroll
 "set sidescroll=1
 "map <ScrollWheelLeft> 5z<Left>
