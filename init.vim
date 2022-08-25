@@ -30,10 +30,14 @@ Plug 'hrsh7th/cmp-buffer' "vim cmp additions
 Plug 'hrsh7th/cmp-path' "vim cmp additions
 Plug 'hrsh7th/cmp-cmdline' "vim cmp additions
 Plug 'hrsh7th/nvim-cmp' "vim cmp additions
+Plug 'L3MON4D3/LuaSnip' " For luasnip users - snippet engine is must for cmp.
+Plug 'saadparwaiz1/cmp_luasnip' " For luasnip users - snippet engine is must for cmp.
 Plug 'akinsho/toggleterm.nvim', {'tag' : 'v2.*'} "toggleterm plugin
 Plug 'nvim-lua/plenary.nvim' "telescope prerequisite
 Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.0' } "telescope. nvim grep tool
 Plug 'folke/which-key.nvim' "which-key: keymap help menu; invoked with `
+Plug 'kyazdani42/nvim-web-devicons' "alpha greeter prerequisite
+Plug 'goolord/alpha-nvim' " alpha greeter
 call plug#end()
 
 set encoding=UTF-8

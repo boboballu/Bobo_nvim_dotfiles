@@ -4,17 +4,26 @@ if not cmp_status_ok then
   return
 end
 
+local snip_status_ok, luasnip = pcall(require, "luasnip")
+if not snip_status_ok then
+  return
+end
+
 local check_backspace = function()
   local col = vim.fn.col "." - 1
   return col == 0 or vim.fn.getline("."):sub(col, col):match "%s"
 end
 
 cmp.setup {
+	-- does require a snippet engine, else it will show an error
+	-- get luasnip
+	-- Not planning to use a snippet engine
 	snippet = {
 		expand = function(args)
-			luasnip.lsp_expand(args.body) -- For `luasnip` users.
+		luasnip.lsp_expand(args.body) -- For `luasnip` users.
 		end,
 	},
+
 	mapping = {
 		["<C-k>"] = cmp.mapping.select_prev_item(),
 		["<C-j>"] = cmp.mapping.select_next_item(),
@@ -72,6 +81,7 @@ cmp.setup {
 -- Setup lspconfig.
 local capabilities = require('cmp_nvim_lsp').update_capabilities(vim.lsp.protocol.make_client_capabilities())
 -- Replace <YOUR_LSP_SERVER> with each lsp server you've enabled.
-require('lspconfig')['pyright'].setup {
+-- pyright is not working in my machine for some reason
+require('lspconfig')['jedi_language_server'].setup {
 	capabilities = capabilities
 }
