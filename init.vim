@@ -5,7 +5,7 @@
 "	- <ctrl + Space> to access most keybindings
 "	- whichkey ` to see all keybindings
 " Source the basic keybindings from ~/.vimrc (will soon be integrated here)
-source ~/.vimrc.common
+" source ~/.vimrc.common
 
 " Only special keybindings unique to nvim and plugins are listed here
 
@@ -15,7 +15,6 @@ call plug#begin()
 Plug 'https://github.com/preservim/nerdtree' " NerdTree
 Plug 'https://github.com/vim-airline/vim-airline' " Status bar
 Plug 'https://github.com/rafi/awesome-vim-colorschemes' " Retro Scheme
-" Plug 'https://github.com/tc50cal/vim-terminal' " Vim Terminal - doesnt work as it reguires python support to be added to nvim - should be compiled with python support
 Plug 'https://github.com/RRethy/vim-tranquille' " Vim disable jump search
 Plug 'https://github.com/preservim/tagbar' " Tagbar for code navigation
 Plug 'https://github.com/dag/vim-fish'  "Fish shell script plugin
@@ -54,17 +53,11 @@ set encoding=UTF-8
 " The below autocmd ... is the a horrible way of doing this. better way is to
 " add % to NERDTree, NERDTreeToggle ... like below
 " autocmd BufEnter * lcd %:p:h
+let NERDTreeShowHidden=1
 nnoremap <C-t> :NERDTreeToggle %<CR>
 " nnoremap <C-f> :NERDTreeFocus<CR>
-nnoremap <C-y> :NERDTree %<CR>
+" nnoremap <C-y> :NERDTree %<CR>
 
-"Tagbar plugin
-nmap <F8> :TagbarToggle<CR>
-
-:set completeopt-=preview " For No Previews
-
-" Vim-tranquille search
-nmap <unique> g/ <Plug>(tranquille_search)
 
 " ------------ clipboard configs ------------------- "
 "copy and paste to and from clipboard using xclip
@@ -93,6 +86,101 @@ let g:VM_maps['Find Subword Under'] = '<C-d>'           " replace visual C-n
 "map <ScrollWheelLeft> 5z<Left>
 "map <ScrollWheelRight> 5z<Right>
 
+" Tarun (tarungovindk) common vimrc file ##
+" Sat Feb 26 09:54:02 PST 2022 ####
+
+:set number					" line number
+" :set relativenumber		" relative line number
+:set autoindent				" Self explanotary
+":set splitbelow				" Default split below
+
+" settings below is based on this doc - http://vimcasts.org/episodes/tabs-and-spaces/
+:set tabstop=4				" redefine tab as 4 spaces		
+:set shiftwidth=4			
+:set smarttab
+:set softtabstop=4
+:set mouse=a
+
+" -------------------- VSCode like key bindings ----------------------- "
+" shell like - ctrl + a for start of the line (NORMAL and INSERT mode)
+noremap <C-a> <ESC>^
+inoremap <C-a> <ESC>I
+
+" shell like - ctrl + e to the end of the line (NORMAL and INSERT mode)
+noremap <C-e> <ESC>$
+inoremap <C-e> <ESC>A
+
+"ctrl + f search (no incremental highlight)
+noremap <C-f> <ESC>:set noincsearch<CR><ESC>/
+inoremap <C-f> <ESC>:set noincsearch<CR><ESC>/
+
+" shift+arrow selection
+nnoremap <S-Up> v<Up>
+noremap <S-Down> v<Down>
+nnoremap <S-Left> v<Left>
+nnoremap <S-Right> v<Right>
+vnoremap <S-Up> <Up>
+vnoremap <S-Down> <Down>
+vnoremap <S-Left> <Left>
+vnoremap <S-Right> <Right>
+inoremap <S-Up> <Esc>v<Up>
+inoremap <S-Down> <Esc>v<Down>
+inoremap <S-Left> <Esc>v<Left>
+inoremap <S-Right> <Esc>v<Right>
+
+" toggle line number
+noremap <C-Space>n <ESC>:set number!<CR>
+inoremap <C-Space>n <ESC>:set number!<CR><ESC>I
+
+" Vscode like word wrap
+noremap <A-z> <ESC>:set wrap!<CR>
+inoremap <A-z> <ESC>:set wrap!<CR><ESC>I
+
+" clear search highlight
+noremap <C-s> :let @/ = ""<CR>
+
+" select a line with ctrl + l<F8>
+nnoremap <C-l> <ESC>V
+
+" Map leader is not for me - I use <C-Space> as a vim prefix
+" And have mapped some keys in it.
+"Setting leader for special operations
+"let mapleader = " "
+
+"toggle relative line number
+"noremap <leader>r :set rnu!<CR>
+noremap <C-Space>r :set rnu!<CR>
+inoremap <C-Space>r :set rnu!<CR>
+
+" show all whitespace, tabs end of lines in a file
+" (A-l) to toggle
+set listchars=eol:↓,tab:↦\ ,trail:·,extends:…,precedes:…,space:·
+noremap <C-Space>l <ESC>:set list!<CR>
+inoremap <C-Space>l <ESC>:set list!<CR>I
+
+
+" Telescope
+noremap <C-Space>s <ESC>:Telescope<CR>
+inoremap <C-Space>s <ESC>:Telescope<CR>
+" Telescope find files
+noremap <C-Space>f <ESC>:Telescope find_files cwd=.
+inoremap <C-Space>f <ESC>:telescope find_files cwd=.
+" Telescope live grep
+noremap <C-Space>g <ESC>:Telescope live-grep cwd=.
+inoremap <C-Space>g <ESC>:Telescope live-grep cwd =.
+
+
+" highlight cursorline
+set cursorline
+
+" ----------- Lua instation ---------------- "
 lua <<EOF
 require "main"
 EOF
+
+"-----------Configs not used anymore---------"
+""Tagbar plugin
+"nmap <F8> :TagbarToggle<CR>
+":set completeopt-=preview " For No Previews
+"" Vim-tranquille search
+"nmap <unique> g/ <Plug>(tranquille_search)
