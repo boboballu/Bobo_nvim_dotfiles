@@ -97,8 +97,9 @@ let g:VM_maps['Find Subword Under'] = '<C-d>'           " replace visual C-n
 " settings below is based on this doc - http://vimcasts.org/episodes/tabs-and-spaces/
 :set tabstop=4				" redefine tab as 4 spaces		
 :set shiftwidth=4			
-:set smarttab
-:set softtabstop=4
+":set smarttab
+":set softtabstop=4
+set expandtab
 :set mouse=a
 
 " -------------------- VSCode like key bindings ----------------------- "
@@ -166,8 +167,8 @@ inoremap <C-Space>s <ESC>:Telescope<CR>
 noremap <C-Space>f <ESC>:Telescope find_files cwd=.
 inoremap <C-Space>f <ESC>:telescope find_files cwd=.
 " Telescope live grep
-noremap <C-Space>g <ESC>:Telescope live-grep cwd=.
-inoremap <C-Space>g <ESC>:Telescope live-grep cwd =.
+noremap <C-Space>g <ESC>:Telescope live_grep cwd=.
+inoremap <C-Space>g <ESC>:Telescope live_grep cwd =.
 
 
 " highlight cursorline
