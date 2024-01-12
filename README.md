@@ -1,4 +1,4 @@
-# Tarun_dotfiles
+# Bobo_nvim_dotfiles
 This repo contains my neovim and fish dotfiles
 
 Sept-4-2022 :
