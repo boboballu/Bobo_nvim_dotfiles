@@ -23,5 +23,9 @@ Sept-4-2022 :
  - added some additional keybindings under <C-Space> 
 	{Toggleterm, Telescope, space-tab-nl markers, rnu, ans so-on. Just enter <C-Space> and lookput for which key suggestions}
 
-
+Jan-24-2024 :
+    nvim :
+        - added ufo plugin that handles vscode like folds
+        - fixed auto complete when pressing enter in vim-cmp
+        - tmux - clipboard fixes. Resurrecting some old configs and disable C-a as prefix2
 

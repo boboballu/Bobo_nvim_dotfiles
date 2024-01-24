@@ -32,11 +32,14 @@ Plug 'hrsh7th/nvim-cmp' "vim cmp additions
 Plug 'L3MON4D3/LuaSnip' " For luasnip users - snippet engine is must for cmp.
 Plug 'saadparwaiz1/cmp_luasnip' " For luasnip users - snippet engine is must for cmp.
 Plug 'akinsho/toggleterm.nvim', {'tag' : 'v2.*'} "toggleterm plugin
-Plug 'nvim-lua/plenary.nvim' "telescope prerequisite
-Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.0' } "telescope. nvim grep tool
+Plug 'nvim-lua/plenary.nvim' "required for telescope prerequisite
+Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.5' } "telescope. nvim grep tool
 Plug 'folke/which-key.nvim' "which-key: keymap help menu; invoked with `
 Plug 'kyazdani42/nvim-web-devicons' "alpha greeter prerequisite
 Plug 'goolord/alpha-nvim' " alpha greeter
+Plug 'kevinhwang91/promise-async' " required for ufo plugin - fold unfold like vscode
+Plug 'kevinhwang91/nvim-ufo' " vscode like fold unfold
+
 call plug#end()
 
 set encoding=UTF-8
@@ -100,7 +103,10 @@ let g:VM_maps['Find Subword Under'] = '<C-d>'           " replace visual C-n
 ":set smarttab
 ":set softtabstop=4
 set expandtab
+" Enable mouse in nvim
 :set mouse=a
+"Enable folding with indent as fold boundary
+":set foldmethod=indent
 
 " -------------------- VSCode like key bindings ----------------------- "
 " shell like - ctrl + a for start of the line (NORMAL and INSERT mode)
@@ -164,11 +170,11 @@ inoremap <C-Space>l <ESC>:set list!<CR>I
 noremap <C-Space>s <ESC>:Telescope<CR>
 inoremap <C-Space>s <ESC>:Telescope<CR>
 " Telescope find files
-noremap <C-Space>f <ESC>:Telescope find_files cwd=.
-inoremap <C-Space>f <ESC>:telescope find_files cwd=.
+noremap <C-Space>f <ESC>:Telescope find_files cwd=.<CR>
+inoremap <C-Space>f <ESC>:telescope find_files cwd=.<CR>
 " Telescope live grep
-noremap <C-Space>g <ESC>:Telescope live_grep cwd=.
-inoremap <C-Space>g <ESC>:Telescope live_grep cwd =.
+noremap <C-Space>g <ESC>:Telescope live_grep cwd=.<CR>
+inoremap <C-Space>g <ESC>:Telescope live_grep cwd =.<CR>
 
 
 " highlight cursorline

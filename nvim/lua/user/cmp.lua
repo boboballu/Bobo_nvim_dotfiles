@@ -15,6 +15,12 @@ local check_backspace = function()
 end
 
 cmp.setup {
+    -- disable preselection by default
+    preselect = 'none',
+    completion={
+        completeopt='menu,preview,menuone,noselect'
+    },
+
 	-- does require a snippet engine, else it will show an error
 	-- get luasnip
 	-- Not planning to use a snippet engine
@@ -37,7 +43,7 @@ cmp.setup {
 		--},
    		 -- Accept currently selected item. If none selected, `select` first item.
    		 -- Set `select` to `false` to only confirm explicitly selected items.
-   		["<CR>"] = cmp.mapping.confirm { select = true },
+   		["<CR>"] = cmp.mapping.confirm { select = false },
 		["<Tab>"] = cmp.mapping(
 		function(fallback)
 			if cmp.visible() then
@@ -78,8 +84,14 @@ cmp.setup {
 	},
 }
 
--- Setup lspconfig.
-local capabilities = require('cmp_nvim_lsp').update_capabilities(vim.lsp.protocol.make_client_capabilities())
+
+-- Setup lspconfig --.
+-- The below line is depricated in cmp
+-- local capabilities = require('cmp_nvim_lsp').update_capabilities(vim.lsp.protocol.make_client_capabilities())
+
+-- The nvim-cmp almost supports LSP's capabilities so You should advertise it to LSP servers..
+local capabilities = require('cmp_nvim_lsp').default_capabilities()
+
 -- Replace <YOUR_LSP_SERVER> with each lsp server you've enabled.
 -- pyright is not working in my machine for some reason
 require('lspconfig')['jedi_language_server'].setup {
