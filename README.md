@@ -28,4 +28,8 @@ Jan-24-2024 :
         - added ufo plugin that handles vscode like folds
         - fixed auto complete when pressing enter in vim-cmp
         - tmux - clipboard fixes. Resurrecting some old configs and disable C-a as prefix2
-
+Jan-25-2024 :
+    Karabiner :
+        - Karabiner elements config added to the repo. This config excludes all the vnc tools and terminal emulators like kitty, iterm2 etc.
+        - Updated the mac "finder" to use the default keymapings
+        - Added commented_sections.json that holds all the don't use keymappings. This in a separate file becsuse the json config doesn't accept comments.
