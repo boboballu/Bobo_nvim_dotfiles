@@ -9,6 +9,11 @@ if not snip_status_ok then
   return
 end
 
+-- loads vscode style snippets from installed plugins (eg: friendly-snippets)
+require("luasnip.loaders.from_vscode").lazy_load()
+
+
+-- Added this function to stop auto fill when pressing enter
 local check_backspace = function()
   local col = vim.fn.col "." - 1
   return col == 0 or vim.fn.getline("."):sub(col, col):match "%s"
@@ -66,24 +71,24 @@ cmp.setup {
 	},
 	sources = {
    		{ name = "nvim_lsp" },
+        { name = "luasnip" },
    		{ name = "buffer" },
-   		{ name = "path" }
+   		{ name = "path" },
 	},
-	confirm_opts = {
-		behavior = cmp.ConfirmBehavior.Replace,
-		select = false,
-	},
-	window = {
-		documentation = {
-			border = { "╭", "─", "╮", "│", "╯", "─", "╰", "│" },
-		},
-	},
-	experimental = {
-		ghost_text = false,
-		native_menu = false,
-	},
+	--confirm_opts = {
+	--	behavior = cmp.ConfirmBehavior.Replace,
+	--	select = false,
+	--},
+	--window = {
+	--	documentation = {
+	--		border = { "╭", "─", "╮", "│", "╯", "─", "╰", "│" },
+	--	},
+	--},
+	--experimental = {
+	--	ghost_text = false,
+	--	native_menu = false,
+	--},
 }
-
 
 -- Setup lspconfig --.
 -- The below line is depricated in cmp

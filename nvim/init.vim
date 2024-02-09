@@ -13,14 +13,16 @@
 call plug#begin()
 
 Plug 'https://github.com/preservim/nerdtree' " NerdTree
+" Plug 'nvim-tree/nvim-tree.lua' "nvim tree - got soo used to nerdtree, chuck this
 Plug 'https://github.com/vim-airline/vim-airline' " Status bar
 Plug 'https://github.com/rafi/awesome-vim-colorschemes' " Retro Scheme
 Plug 'https://github.com/RRethy/vim-tranquille' " Vim disable jump search
 Plug 'https://github.com/preservim/tagbar' " Tagbar for code navigation
 Plug 'https://github.com/dag/vim-fish'  "Fish shell script plugin
 Plug 'https://github.com/mg979/vim-visual-multi' "multicursor for vim
-" Plug 'https://github.com/williamboman/nvim-lsp-installer' "lsp installer
-" auto completion plugins
+
+" Plug 'https://github.com/williamboman/nvim-lsp-installer' "lsp installer - depricated
+" start : auto completion plugins
 Plug 'https://github.com/neovim/nvim-lspconfig' "lsp config
 Plug 'hrsh7th/nvim-compe' "auto completion
 Plug 'neovim/nvim-lspconfig' "vim cmp additions
@@ -30,16 +32,22 @@ Plug 'hrsh7th/cmp-path' "vim cmp additions
 Plug 'hrsh7th/cmp-cmdline' "vim cmp additions
 Plug 'hrsh7th/nvim-cmp' "vim cmp additions
 Plug 'L3MON4D3/LuaSnip' " For luasnip users - snippet engine is must for cmp.
+Plug 'rafamadriz/friendly-snippets' " offers vscode like snippets for cmp
 Plug 'saadparwaiz1/cmp_luasnip' " For luasnip users - snippet engine is must for cmp.
+"end : auto completion plugins
+
 Plug 'akinsho/toggleterm.nvim', {'tag' : 'v2.*'} "toggleterm plugin
-Plug 'nvim-lua/plenary.nvim' "required for telescope prerequisite
+
+Plug 'nvim-lua/plenary.nvim' "prerequisite : telescope
 Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.5' } "telescope. nvim grep tool
+
 Plug 'folke/which-key.nvim' "which-key: keymap help menu; invoked with `
 Plug 'kyazdani42/nvim-web-devicons' "alpha greeter prerequisite
 Plug 'goolord/alpha-nvim' " alpha greeter
-Plug 'kevinhwang91/promise-async' " required for ufo plugin - fold unfold like vscode
+Plug 'kevinhwang91/promise-async' " prerequisite : ufo plugin
 Plug 'kevinhwang91/nvim-ufo' " vscode like fold unfold
 Plug 'williamboman/mason.nvim' " lsp installer is no longer maintained. Moving to mason
+Plug 'jbyuki/venn.nvim' " ascii block diagrams
 call plug#end()
 
 set encoding=UTF-8
@@ -56,8 +64,10 @@ set encoding=UTF-8
 " The below autocmd ... is the a horrible way of doing this. better way is to
 " add % to NERDTree, NERDTreeToggle ... like below
 " autocmd BufEnter * lcd %:p:h
+
 let NERDTreeShowHidden=1
 nnoremap <C-t> :NERDTreeToggle %<CR>
+
 " nnoremap <C-f> :NERDTreeFocus<CR>
 " nnoremap <C-y> :NERDTree %<CR>
 
@@ -70,6 +80,8 @@ nnoremap <C-t> :NERDTreeToggle %<CR>
 set clipboard=unnamedplus
 " clipboard mapping
 vnoremap <C-c> "+y :let @*=@+<CR>
+" first remap the visual block mode
+nnoremap b <ESC><C-v>
 "+P is to insert before cursor; p is to insert after cursor
 noremap <C-v> "+p
 inoremap <C-v> <ESC>"+p
@@ -95,11 +107,12 @@ let g:VM_maps['Find Subword Under'] = '<C-d>'           " replace visual C-n
 :set number					" line number
 " :set relativenumber		" relative line number
 :set autoindent				" Self explanotary
-":set splitbelow				" Default split below
+":set splitbelow			" Default split below
 
 " settings below is based on this doc - http://vimcasts.org/episodes/tabs-and-spaces/
 :set tabstop=4				" redefine tab as 4 spaces		
-:set shiftwidth=4			
+:set shiftwidth=4
+:set textwidth=0            " disabling the automatic break line feature
 ":set smarttab
 ":set softtabstop=4
 set expandtab
@@ -123,7 +136,7 @@ inoremap <C-f> <ESC>:set noincsearch<CR><ESC>/
 
 " shift+arrow selection
 nnoremap <S-Up> v<Up>
-noremap <S-Down> v<Down>
+nnoremap <S-Down> v<Down>
 nnoremap <S-Left> v<Left>
 nnoremap <S-Right> v<Right>
 vnoremap <S-Up> <Up>
@@ -197,3 +210,6 @@ augroup psv_syntax
   au!
   autocmd BufNewFile,BufRead *.psv   set syntax=systemverilog
 augroup END
+
+let g:markdown_fenced_languages = ['python', 'c', 'cpp', 'lua', 'vim', 'yaml', 'make', 'systemverilog', 'rust']
+
