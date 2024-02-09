@@ -33,3 +33,12 @@ Jan-25-2024 :
         - Karabiner elements config added to the repo. This config excludes all the vnc tools and terminal emulators like kitty, iterm2 etc.
         - Updated the mac "finder" to use the default keymapings
         - Added commented_sections.json that holds all the don't use keymappings. This in a separate file becsuse the json config doesn't accept comments.
+
+Feb-09-2024 :
+    Clipboard management : clipboard_select.sh
+        - The x11 clipboard xclip in kitty fails for unknown reason. Kitty offers clipboard in 'kitten clipboard' application and I wanted to switch the clipboard to 'kitten clipboard' if the x11 xclip fails.
+        - The testing of the clipboard is buggy that if kills the x11 xclip if it already worked fine. Butchers the x11 forwarding entirely.
+        - Set the default x11 server to be x11 in kitty settings
+            "linux_display_server X11"
+        - The code is not complete and needs some testing and corrections. The "kitten clipboard" check fails
+

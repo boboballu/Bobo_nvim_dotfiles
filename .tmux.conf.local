@@ -454,10 +454,11 @@ set -gu prefix2
 # tried the tmux-yank plugin, didn't like it
 #set -g @plugin 'tmux-plugins/tmux-yank'
 
+bind -T copy-mode-vi y send-keys -X copy-pipe-no-clear 'xclip -in -selection clipboard'
 
+### the below clipboard options are tried and rejected
 #bind -T copy-mode y send-keys -X copy-pipe-no-cancel 'xclip -in -selection clipboard'
 #bind -T copy-mode-vi y send-keys -X copy-pipe-no-cancel 'xclip -in -selection clipboard'
-bind -T copy-mode-vi y send-keys -X copy-pipe-no-clear 'xclip -in -selection clipboard'
 #bind-key -Tcopy-mode-vi y send -X copy-selection-no-clear
 #bind-key -Tcopy-mode-vi MouseDragEnd1Pane send -X copy-selection-no-clear
 #bind-key -T copy-mode-vi C-c send-keys -X copy-pipe "xclip -selection clipboard ; tmux send-keys -X clear-selection"
