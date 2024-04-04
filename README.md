@@ -1,5 +1,17 @@
 # Bobo_nvim_dotfiles
 This repo contains my neovim, fish and tmux dot files dotfiles
+ 
+ - Last backup : 14th Feb 2024
+
+ - Dependencies:
+  - fzf
+  - nvim
+  - tmux
+
+- Vscode in mac -
+    Use the below extension to use windows keybindings on vscode mac
+    https://marketplace.visualstudio.com/items?itemName=smcpeak.default-keys-windows
+
 - Tmux Config -
     Pre-requisites: 
         Needs Tmux and Oh my Tmux. The tmux conf is based on the ph my tmux project - https://github.com/gpakosz/.tmux
@@ -42,3 +54,11 @@ Feb-09-2024 :
             "linux_display_server X11"
         - The code is not complete and needs some testing and corrections. The "kitten clipboard" check fails
 
+Mar-18-2024 :
+    tmux:
+        - Added mac's config to the repo
+        - Added yabai and skhd dotfiles
+
+Future Plans :
+    Mar-18-2024 :
+        - Needed to merge the linux and mac's config together. Planning to get a simple config for the final release
