@@ -347,6 +347,27 @@ tmux_conf_theme_clock_style="24"
 # on Linux, this requires xsel, xclip or wl-copy
 tmux_conf_copy_to_os_clipboard=true
 
+# for kitten clipboard working [on, external, off]
+set -s set-clipboard on
+
+# set -as terminal-features ',xterm-kitty:clipboard'
+
+## Trying a hack that didn't work
+
+##  # tmux-256color instead of screen-256color enables italics
+##  set -g default-terminal "tmux-256color"
+##   
+##  # Tc enables true color
+##  set -ag terminal-overrides ",*256col*:colors=256:Tc"
+##   
+##  # Ms modifies OSC 52 clipboard handling to work with mosh, see
+##  # https://gist.github.com/yudai/95b20e3da66df1b066531997f982b57b
+##  set -ag terminal-overrides "vte*:XT:Ms=\\E]52;c;%p2%s\\7,xterm*:XT:Ms=\\E]52;c;%p2%s\\7"
+##   
+##  # enable OSC 52 clipboard
+##  # https://medium.freecodecamp.org/tmux-in-practice-integration-with-system-clipboard-bcd72c62ff7b
+##  set -g set-clipboard on
+
 
 # -- user customizations -------------------------------------------------------
 # this is the place to override or undo settings

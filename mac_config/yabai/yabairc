@@ -57,5 +57,6 @@ yabai -m rule --add app="^Music$" manage=off
 yabai -m rule --add app="^Finder$" manage=off
 yabai -m rule --add app="PCoIPClient" manage=off
 yabai -m rule --add app="Anyware Client" manage=off
+yabai -m rule --add app="Shortcuts" manage=off
 
 echo "yabai configuration loaded.."

@@ -1,5 +1,5 @@
 # : << EOF
-# https://github.com/gpakosz/.tmux
+# rdvtldbbuikjvctbieietuhttps://github.com/gpakosz/.tmux
 # (‑●‑●)> dual licensed under the WTFPL v2 license and the MIT license,
 #         without any warranty.
 #         Copyright 2012— Gregory Pakosz (@gpakosz).
@@ -68,24 +68,23 @@ tmux_conf_24b_colour=auto
 tmux_conf_theme=enabled
 
 # default theme
-tmux_conf_theme_colour_black="#000000"      # black
-tmux_conf_theme_colour_1="#080808"          # dark gray
-tmux_conf_theme_colour_2="#303030"          # gray
-tmux_conf_theme_colour_3="#8a8a8a"          # light gray
-tmux_conf_theme_colour_4="#00afff"          # light blue
-tmux_conf_theme_colour_5="#ffff00"          # yellow
-tmux_conf_theme_colour_6="#080808"          # dark gray
-tmux_conf_theme_colour_7="#e4e4e4"          # white
-tmux_conf_theme_colour_8="#080808"          # dark gray
-tmux_conf_theme_colour_9="#ffff00"          # yellow
-tmux_conf_theme_colour_10="#ff00af"         # pink
-tmux_conf_theme_colour_11="#5fff00"         # green
-tmux_conf_theme_colour_12="#8a8a8a"         # light gray
-tmux_conf_theme_colour_13="#e4e4e4"         # white
-tmux_conf_theme_colour_14="#080808"         # dark gray
-tmux_conf_theme_colour_15="#080808"         # dark gray
-tmux_conf_theme_colour_16="#d70000"         # red
-tmux_conf_theme_color_white="#e4e4e4"         # white
+tmux_conf_theme_colour_1="#080808"    # dark gray
+tmux_conf_theme_colour_2="#303030"    # gray
+tmux_conf_theme_colour_3="#8a8a8a"    # light gray
+tmux_conf_theme_colour_4="#00afff"    # light blue
+tmux_conf_theme_colour_5="#ffff00"    # yellow
+tmux_conf_theme_colour_6="#080808"    # dark gray
+tmux_conf_theme_colour_7="#e4e4e4"    # white
+tmux_conf_theme_colour_8="#080808"    # dark gray
+tmux_conf_theme_colour_9="#ffff00"    # yellow
+tmux_conf_theme_colour_10="#ff00af"   # pink
+tmux_conf_theme_colour_11="#5fff00"   # green
+tmux_conf_theme_colour_12="#8a8a8a"   # light gray
+tmux_conf_theme_colour_13="#e4e4e4"   # white
+tmux_conf_theme_colour_14="#080808"   # dark gray
+tmux_conf_theme_colour_15="#080808"   # dark gray
+tmux_conf_theme_colour_16="#d70000"   # red
+tmux_conf_theme_colour_17="#e4e4e4"   # white
 
 # default theme (ansi)
 #tmux_conf_theme_colour_1="colour0"
@@ -104,7 +103,7 @@ tmux_conf_theme_color_white="#e4e4e4"         # white
 #tmux_conf_theme_colour_14="colour0"
 #tmux_conf_theme_colour_15="colour0"
 #tmux_conf_theme_colour_16="colour1"
-#tmux_conf_theme_color_white="colour15"
+#tmux_conf_theme_colour_17="colour15"
 
 # window style
 tmux_conf_theme_window_fg="default"
@@ -136,11 +135,11 @@ tmux_conf_theme_pane_active_indicator="$tmux_conf_theme_colour_4"
 
 # status line style
 tmux_conf_theme_message_fg="$tmux_conf_theme_colour_1"
-tmux_conf_theme_message_bg="$tmux_conf_theme_colour_10"
+tmux_conf_theme_message_bg="$tmux_conf_theme_colour_5"
 tmux_conf_theme_message_attr="bold"
 
 # status line command style (<prefix> : Escape)
-tmux_conf_theme_message_command_fg="$tmux_conf_theme_colour_10"
+tmux_conf_theme_message_command_fg="$tmux_conf_theme_colour_5"
 tmux_conf_theme_message_command_bg="$tmux_conf_theme_colour_1"
 tmux_conf_theme_message_command_attr="bold"
 
@@ -151,7 +150,7 @@ tmux_conf_theme_mode_attr="bold"
 
 # status line style
 tmux_conf_theme_status_fg="$tmux_conf_theme_colour_3"
-tmux_conf_theme_status_bg="$tmux_conf_theme_colour_10"
+tmux_conf_theme_status_bg="$tmux_conf_theme_colour_1"
 tmux_conf_theme_status_attr="none"
 
 # terminal title
@@ -255,19 +254,19 @@ tmux_conf_theme_right_separator_sub="|"
 tmux_conf_theme_status_left=" ❐ #S | ↑#{?uptime_y, #{uptime_y}y,}#{?uptime_d, #{uptime_d}d,}#{?uptime_h, #{uptime_h}h,}#{?uptime_m, #{uptime_m}m,} "
 
 ## [edit] - removing the battery status and adding cpu usage status
- tmux_conf_theme_status_right=" #{prefix}#{mouse}#{pairing}#{synchronized}#{?battery_status,#{battery_status},}#{?battery_bar, #{battery_bar},}#{?battery_percentage, #{battery_percentage},} , %R , %d %b | #{username}#{root} | #{hostname} "
+# tmux_conf_theme_status_right=" #{prefix}#{mouse}#{pairing}#{synchronized}#{?battery_status,#{battery_status},}#{?battery_bar, #{battery_bar},}#{?battery_percentage, #{battery_percentage},} , %R , %d %b | #{username}#{root} | #{hostname} "
 
 #tmux_conf_theme_status_right=" #{prefix}#{mouse}#{pairing}#{synchronized}#{?battery_status,#{battery_status},}#{?battery_bar, #{battery_bar},}#{?battery_percentage, #{battery_percentage},} , %R , %d %b | #{username}#{root} | #{hostname} "
-#tmux_conf_theme_status_right=" #{prefix}#{mouse}#{pairing}#{synchronized} , %R , %d %b | #{username}#{root} | #{hostname} "
+tmux_conf_theme_status_right=" #{prefix}#{mouse}#{pairing}#{synchronized} , %R , %d %b | #{username}#{root} | #{hostname} "
 # status left style
 tmux_conf_theme_status_left_fg="$tmux_conf_theme_colour_6,$tmux_conf_theme_colour_7,$tmux_conf_theme_colour_8"
-tmux_conf_theme_status_left_bg="$tmux_conf_theme_colour_4,$tmux_conf_theme_colour_10,$tmux_conf_theme_colour_11"
+tmux_conf_theme_status_left_bg="$tmux_conf_theme_colour_9,$tmux_conf_theme_colour_10,$tmux_conf_theme_colour_11"
 tmux_conf_theme_status_left_attr="bold,none,none"
 
 # status right style
-tmux_conf_theme_status_right_fg="$tmux_conf_theme_colour_6,$tmux_conf_theme_colour_13,$tmux_conf_theme_colour_14"
-tmux_conf_theme_status_right_bg="$tmux_conf_theme_colour_10,$tmux_conf_theme_colour_16,$tmux_conf_theme_colour_10"
-tmux_conf_theme_status_right_attr="bold,none,bold"
+tmux_conf_theme_status_right_fg="$tmux_conf_theme_colour_12,$tmux_conf_theme_colour_13,$tmux_conf_theme_colour_14"
+tmux_conf_theme_status_right_bg="$tmux_conf_theme_colour_15,$tmux_conf_theme_colour_16,$tmux_conf_theme_colour_17"
+tmux_conf_theme_status_right_attr="none,none,bold"
 
 # pairing indicator
 tmux_conf_theme_pairing="⚇"                 # U+2687
@@ -351,7 +350,12 @@ tmux_conf_theme_clock_style="24"
 #   - disabled
 # on macOS, this requires installing reattach-to-user-namespace, see README.md
 # on Linux, this requires xsel, xclip or wl-copy
-tmux_conf_copy_to_os_clipboard=true
+tmux_conf_copy_to_os_clipboard=false
+
+# for kitten clipboard working [on, external, off]
+set -g set-clipboard on
+
+set -g allow-passthrough on
 
 
 # -- user customizations -------------------------------------------------------
@@ -461,7 +465,7 @@ set -gu prefix2
 
 bind -T copy-mode-vi y send-keys -X copy-pipe-no-clear 'xclip -in -selection clipboard'
 
-### the below clipboard options are tried and rejected
+# These options are tried and rejected
 #bind -T copy-mode y send-keys -X copy-pipe-no-cancel 'xclip -in -selection clipboard'
 #bind -T copy-mode-vi y send-keys -X copy-pipe-no-cancel 'xclip -in -selection clipboard'
 #bind-key -Tcopy-mode-vi y send -X copy-selection-no-clear

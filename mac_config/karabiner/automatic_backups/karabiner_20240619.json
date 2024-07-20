@@ -52,6 +52,8 @@
                                             "^co\\.zeit\\.hyper$",
                                             "^io\\.alacritty$",
                                             "^net\\.kovidgoyal\\.kitty$",
+                                            "^com\\.microsoft\\.VSCode$",
+                                            "^com\\.facebook\\.fbvscode$",
                                             "^tv\\.parsec\\.www$",
                                             "^com\\.teradici\\.pcoipclient$"
                                         ],
@@ -111,6 +113,8 @@
                                             "^co\\.zeit\\.hyper$",
                                             "^io\\.alacritty$",
                                             "^net\\.kovidgoyal\\.kitty$",
+                                            "^com\\.microsoft\\.VSCode$",
+                                            "^com\\.facebook\\.fbvscode$",
                                             "^tv\\.parsec\\.www$",
                                             "^com\\.teradici\\.pcoipclient$"
                                         ],
@@ -170,6 +174,8 @@
                                             "^co\\.zeit\\.hyper$",
                                             "^io\\.alacritty$",
                                             "^net\\.kovidgoyal\\.kitty$",
+                                            "^com\\.microsoft\\.VSCode$",
+                                            "^com\\.facebook\\.fbvscode$",
                                             "^tv\\.parsec\\.www$",
                                             "^com\\.teradici\\.pcoipclient$"
                                         ],
@@ -234,6 +240,8 @@
                                             "^co\\.zeit\\.hyper$",
                                             "^io\\.alacritty$",
                                             "^net\\.kovidgoyal\\.kitty$",
+                                            "^com\\.microsoft\\.VSCode$",
+                                            "^com\\.facebook\\.fbvscode$",
                                             "^tv\\.parsec\\.www$",
                                             "^com\\.teradici\\.pcoipclient$"
                                         ],
@@ -298,6 +306,8 @@
                                             "^co\\.zeit\\.hyper$",
                                             "^io\\.alacritty$",
                                             "^net\\.kovidgoyal\\.kitty$",
+                                            "^com\\.microsoft\\.VSCode$",
+                                            "^com\\.facebook\\.fbvscode$",
                                             "^tv\\.parsec\\.www$",
                                             "^com\\.teradici\\.pcoipclient$"
                                         ],
@@ -363,6 +373,8 @@
                                             "^co\\.zeit\\.hyper$",
                                             "^io\\.alacritty$",
                                             "^net\\.kovidgoyal\\.kitty$",
+                                            "^com\\.microsoft\\.VSCode$",
+                                            "^com\\.facebook\\.fbvscode$",
                                             "^tv\\.parsec\\.www$",
                                             "^com\\.teradici\\.pcoipclient$"
                                         ],
@@ -427,6 +439,8 @@
                                             "^co\\.zeit\\.hyper$",
                                             "^io\\.alacritty$",
                                             "^net\\.kovidgoyal\\.kitty$",
+                                            "^com\\.microsoft\\.VSCode$",
+                                            "^com\\.facebook\\.fbvscode$",
                                             "^tv\\.parsec\\.www$",
                                             "^com\\.teradici\\.pcoipclient$"
                                         ],
@@ -491,6 +505,8 @@
                                             "^co\\.zeit\\.hyper$",
                                             "^io\\.alacritty$",
                                             "^net\\.kovidgoyal\\.kitty$",
+                                            "^com\\.microsoft\\.VSCode$",
+                                            "^com\\.facebook\\.fbvscode$",
                                             "^tv\\.parsec\\.www$",
                                             "^com\\.teradici\\.pcoipclient$"
                                         ],
@@ -555,6 +571,8 @@
                                             "^co\\.zeit\\.hyper$",
                                             "^io\\.alacritty$",
                                             "^net\\.kovidgoyal\\.kitty$",
+                                            "^com\\.microsoft\\.VSCode$",
+                                            "^com\\.facebook\\.fbvscode$",
                                             "^tv\\.parsec\\.www$",
                                             "^com\\.teradici\\.pcoipclient$"
                                         ],
@@ -728,6 +746,8 @@
                                             "^co\\.zeit\\.hyper$",
                                             "^io\\.alacritty$",
                                             "^net\\.kovidgoyal\\.kitty$",
+                                            "^com\\.microsoft\\.VSCode$",
+                                            "^com\\.facebook\\.fbvscode$",
                                             "^tv\\.parsec\\.www$",
                                             "^com\\.teradici\\.pcoipclient$"
                                         ],
@@ -788,6 +808,8 @@
                                             "^com\\.vmware\\.proxyApp\\.",
                                             "^com\\.parallels\\.winapp\\.",
                                             "^net\\.kovidgoyal\\.kitty$",
+                                            "^com\\.microsoft\\.VSCode$",
+                                            "^com\\.facebook\\.fbvscode$",
                                             "^tv\\.parsec\\.www$",
                                             "^com\\.teradici\\.pcoipclient$"
                                         ],
@@ -826,6 +848,8 @@
                                             "^org\\.virtualbox\\.app\\.VirtualBoxVM$",
                                             "^com\\.microsoft\\.rdc\\.macos$",
                                             "^net\\.kovidgoyal\\.kitty$",
+                                            "^com\\.microsoft\\.VSCode$",
+                                            "^com\\.facebook\\.fbvscode$",
                                             "^tv\\.parsec\\.www$",
                                             "^com\\.teradici\\.pcoipclient$"
                                         ],
@@ -859,6 +883,8 @@
                                             "^org\\.virtualbox\\.app\\.VirtualBoxVM$",
                                             "^com\\.microsoft\\.rdc\\.macos$",
                                             "^net\\.kovidgoyal\\.kitty$",
+                                            "^com\\.microsoft\\.VSCode$",
+                                            "^com\\.facebook\\.fbvscode$",
                                             "^tv\\.parsec\\.www$",
                                             "^com\\.teradici\\.pcoipclient$"
                                         ],
@@ -898,6 +924,8 @@
                                             "^org\\.virtualbox\\.app\\.VirtualBoxVM$",
                                             "^com\\.microsoft\\.rdc\\.macos$",
                                             "^net\\.kovidgoyal\\.kitty$",
+                                            "^com\\.microsoft\\.VSCode$",
+                                            "^com\\.facebook\\.fbvscode$",
                                             "^tv\\.parsec\\.www$",
                                             "^com\\.teradici\\.pcoipclient$"
                                         ],
@@ -939,6 +967,8 @@
                                             "^org\\.virtualbox\\.app\\.VirtualBoxVM$",
                                             "^com\\.microsoft\\.rdc\\.macos$",
                                             "^net\\.kovidgoyal\\.kitty$",
+                                            "^com\\.microsoft\\.VSCode$",
+                                            "^com\\.facebook\\.fbvscode$",
                                             "^tv\\.parsec\\.www$",
                                             "^com\\.teradici\\.pcoipclient$"
                                         ],
@@ -972,6 +1002,8 @@
                                             "^org\\.virtualbox\\.app\\.VirtualBoxVM$",
                                             "^com\\.microsoft\\.rdc\\.macos$",
                                             "^net\\.kovidgoyal\\.kitty$",
+                                            "^com\\.microsoft\\.VSCode$",
+                                            "^com\\.facebook\\.fbvscode$",
                                             "^tv\\.parsec\\.www$",
                                             "^com\\.teradici\\.pcoipclient$"
                                         ],
@@ -1011,6 +1043,8 @@
                                             "^org\\.virtualbox\\.app\\.VirtualBoxVM$",
                                             "^com\\.microsoft\\.rdc\\.macos$",
                                             "^net\\.kovidgoyal\\.kitty$",
+                                            "^com\\.microsoft\\.VSCode$",
+                                            "^com\\.facebook\\.fbvscode$",
                                             "^tv\\.parsec\\.www$",
                                             "^com\\.teradici\\.pcoipclient$"
                                         ],
@@ -1052,6 +1086,8 @@
                                             "^org\\.virtualbox\\.app\\.VirtualBoxVM$",
                                             "^com\\.microsoft\\.rdc\\.macos$",
                                             "^net\\.kovidgoyal\\.kitty$",
+                                            "^com\\.microsoft\\.VSCode$",
+                                            "^com\\.facebook\\.fbvscode$",
                                             "^tv\\.parsec\\.www$",
                                             "^com\\.teradici\\.pcoipclient$"
                                         ],
@@ -1093,6 +1129,8 @@
                                             "^org\\.virtualbox\\.app\\.VirtualBoxVM$",
                                             "^com\\.microsoft\\.rdc\\.macos$",
                                             "^net\\.kovidgoyal\\.kitty$",
+                                            "^com\\.microsoft\\.VSCode$",
+                                            "^com\\.facebook\\.fbvscode$",
                                             "^tv\\.parsec\\.www$",
                                             "^com\\.teradici\\.pcoipclient$"
                                         ],
@@ -1134,6 +1172,8 @@
                                             "^org\\.virtualbox\\.app\\.VirtualBoxVM$",
                                             "^com\\.microsoft\\.rdc\\.macos$",
                                             "^net\\.kovidgoyal\\.kitty$",
+                                            "^com\\.microsoft\\.VSCode$",
+                                            "^com\\.facebook\\.fbvscode$",
                                             "^tv\\.parsec\\.www$",
                                             "^com\\.teradici\\.pcoipclient$"
                                         ],
@@ -1280,6 +1320,8 @@
                                             "^co\\.zeit\\.hyper$",
                                             "^io\\.alacritty$",
                                             "^net\\.kovidgoyal\\.kitty$",
+                                            "^com\\.microsoft\\.VSCode$",
+                                            "^com\\.facebook\\.fbvscode$",
                                             "^tv\\.parsec\\.www$",
                                             "^com\\.teradici\\.pcoipclient$"
                                         ],
@@ -1341,6 +1383,8 @@
                                             "^co\\.zeit\\.hyper$",
                                             "^io\\.alacritty$",
                                             "^net\\.kovidgoyal\\.kitty$",
+                                            "^com\\.microsoft\\.VSCode$",
+                                            "^com\\.facebook\\.fbvscode$",
                                             "^tv\\.parsec\\.www$",
                                             "^com\\.teradici\\.pcoipclient$"
                                         ],
@@ -1400,6 +1444,8 @@
                                             "^co\\.zeit\\.hyper$",
                                             "^io\\.alacritty$",
                                             "^net\\.kovidgoyal\\.kitty$",
+                                            "^com\\.microsoft\\.VSCode$",
+                                            "^com\\.facebook\\.fbvscode$",
                                             "^tv\\.parsec\\.www$",
                                             "^com\\.teradici\\.pcoipclient$"
                                         ],
@@ -1464,6 +1510,8 @@
                                             "^co\\.zeit\\.hyper$",
                                             "^io\\.alacritty$",
                                             "^net\\.kovidgoyal\\.kitty$",
+                                            "^com\\.microsoft\\.VSCode$",
+                                            "^com\\.facebook\\.fbvscode$",
                                             "^tv\\.parsec\\.www$",
                                             "^com\\.teradici\\.pcoipclient$"
                                         ],
@@ -1523,6 +1571,8 @@
                                             "^co\\.zeit\\.hyper$",
                                             "^io\\.alacritty$",
                                             "^net\\.kovidgoyal\\.kitty$",
+                                            "^com\\.microsoft\\.VSCode$",
+                                            "^com\\.facebook\\.fbvscode$",
                                             "^tv\\.parsec\\.www$",
                                             "^com\\.teradici\\.pcoipclient$"
                                         ],
@@ -1585,6 +1635,8 @@
                                             "^co\\.zeit\\.hyper$",
                                             "^io\\.alacritty$",
                                             "^net\\.kovidgoyal\\.kitty$",
+                                            "^com\\.microsoft\\.VSCode$",
+                                            "^com\\.facebook\\.fbvscode$",
                                             "^tv\\.parsec\\.www$",
                                             "^com\\.teradici\\.pcoipclient$"
                                         ],
@@ -1639,6 +1691,8 @@
                                             "^co\\.zeit\\.hyper$",
                                             "^io\\.alacritty$",
                                             "^net\\.kovidgoyal\\.kitty$",
+                                            "^com\\.microsoft\\.VSCode$",
+                                            "^com\\.facebook\\.fbvscode$",
                                             "^tv\\.parsec\\.www$",
                                             "^com\\.teradici\\.pcoipclient$"
                                         ],
@@ -1660,31 +1714,6 @@
                                     {
                                         "key_code": "down_arrow",
                                         "modifiers": []
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "description": "Cmd+L => Cmd+Option+Q (Lock Screen)",
-                        "manipulators": [
-                            {
-                                "from": {
-                                    "key_code": "l",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "command"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "q",
-                                        "modifiers": [
-                                            "left_control",
-                                            "left_command"
-                                        ]
                                     }
                                 ],
                                 "type": "basic"
@@ -1722,6 +1751,8 @@
                                             "^com\\.vmware\\.proxyApp\\.",
                                             "^com\\.parallels\\.winapp\\.",
                                             "^net\\.kovidgoyal\\.kitty$",
+                                            "^com\\.microsoft\\.VSCode$",
+                                            "^com\\.facebook\\.fbvscode$",
                                             "^tv\\.parsec\\.www$",
                                             "^com\\.teradici\\.pcoipclient$"
                                         ],
@@ -1777,6 +1808,8 @@
                                             "^com\\.vmware\\.proxyApp\\.",
                                             "^com\\.parallels\\.winapp\\.",
                                             "^net\\.kovidgoyal\\.kitty$",
+                                            "^com\\.microsoft\\.VSCode$",
+                                            "^com\\.facebook\\.fbvscode$",
                                             "^tv\\.parsec\\.www$",
                                             "^com\\.teradici\\.pcoipclient$"
                                         ],
@@ -1897,7 +1930,128 @@
                 },
                 {
                     "disable_built_in_keyboard_if_exists": false,
-                    "fn_function_keys": [],
+                    "fn_function_keys": [
+                        {
+                            "from": {
+                                "key_code": "f1"
+                            },
+                            "to": [
+                                {
+                                    "key_code": "f1"
+                                }
+                            ]
+                        },
+                        {
+                            "from": {
+                                "key_code": "f2"
+                            },
+                            "to": [
+                                {
+                                    "key_code": "f2"
+                                }
+                            ]
+                        },
+                        {
+                            "from": {
+                                "key_code": "f3"
+                            },
+                            "to": [
+                                {
+                                    "key_code": "f3"
+                                }
+                            ]
+                        },
+                        {
+                            "from": {
+                                "key_code": "f4"
+                            },
+                            "to": [
+                                {
+                                    "key_code": "f4"
+                                }
+                            ]
+                        },
+                        {
+                            "from": {
+                                "key_code": "f5"
+                            },
+                            "to": [
+                                {
+                                    "key_code": "f5"
+                                }
+                            ]
+                        },
+                        {
+                            "from": {
+                                "key_code": "f6"
+                            },
+                            "to": [
+                                {
+                                    "key_code": "f6"
+                                }
+                            ]
+                        },
+                        {
+                            "from": {
+                                "key_code": "f7"
+                            },
+                            "to": [
+                                {
+                                    "key_code": "f7"
+                                }
+                            ]
+                        },
+                        {
+                            "from": {
+                                "key_code": "f8"
+                            },
+                            "to": [
+                                {
+                                    "key_code": "f8"
+                                }
+                            ]
+                        },
+                        {
+                            "from": {
+                                "key_code": "f9"
+                            },
+                            "to": [
+                                {
+                                    "key_code": "f9"
+                                }
+                            ]
+                        },
+                        {
+                            "from": {
+                                "key_code": "f10"
+                            },
+                            "to": [
+                                {
+                                    "key_code": "f10"
+                                }
+                            ]
+                        },
+                        {
+                            "from": {
+                                "key_code": "f11"
+                            },
+                            "to": [
+                                {
+                                    "key_code": "f11"
+                                }
+                            ]
+                        },
+                        {
+                            "from": {
+                                "key_code": "f12"
+                            },
+                            "to": [
+                                {
+                                    "key_code": "f12"
+                                }
+                            ]
+                        }
+                    ],
                     "game_pad_swap_sticks": false,
                     "identifiers": {
                         "is_game_pad": false,
@@ -1981,6 +2135,240 @@
                     "mouse_swap_wheels": false,
                     "mouse_swap_xy": false,
                     "simple_modifications": [],
+                    "treat_as_built_in_keyboard": false
+                },
+                {
+                    "disable_built_in_keyboard_if_exists": false,
+                    "fn_function_keys": [
+                        {
+                            "from": {
+                                "key_code": "f1"
+                            },
+                            "to": [
+                                {
+                                    "key_code": "f1"
+                                }
+                            ]
+                        },
+                        {
+                            "from": {
+                                "key_code": "f2"
+                            },
+                            "to": [
+                                {
+                                    "key_code": "f2"
+                                }
+                            ]
+                        },
+                        {
+                            "from": {
+                                "key_code": "f3"
+                            },
+                            "to": [
+                                {
+                                    "key_code": "f3"
+                                }
+                            ]
+                        },
+                        {
+                            "from": {
+                                "key_code": "f4"
+                            },
+                            "to": [
+                                {
+                                    "key_code": "f4"
+                                }
+                            ]
+                        },
+                        {
+                            "from": {
+                                "key_code": "f5"
+                            },
+                            "to": [
+                                {
+                                    "key_code": "f5"
+                                }
+                            ]
+                        },
+                        {
+                            "from": {
+                                "key_code": "f6"
+                            },
+                            "to": [
+                                {
+                                    "key_code": "f6"
+                                }
+                            ]
+                        },
+                        {
+                            "from": {
+                                "key_code": "f7"
+                            },
+                            "to": [
+                                {
+                                    "key_code": "f7"
+                                }
+                            ]
+                        },
+                        {
+                            "from": {
+                                "key_code": "f8"
+                            },
+                            "to": [
+                                {
+                                    "key_code": "f8"
+                                }
+                            ]
+                        },
+                        {
+                            "from": {
+                                "key_code": "f9"
+                            },
+                            "to": [
+                                {
+                                    "key_code": "f9"
+                                }
+                            ]
+                        },
+                        {
+                            "from": {
+                                "key_code": "f10"
+                            },
+                            "to": [
+                                {
+                                    "key_code": "f10"
+                                }
+                            ]
+                        },
+                        {
+                            "from": {
+                                "key_code": "f11"
+                            },
+                            "to": [
+                                {
+                                    "key_code": "f11"
+                                }
+                            ]
+                        },
+                        {
+                            "from": {
+                                "key_code": "f12"
+                            },
+                            "to": [
+                                {
+                                    "key_code": "f12"
+                                }
+                            ]
+                        }
+                    ],
+                    "game_pad_swap_sticks": false,
+                    "identifiers": {
+                        "is_game_pad": false,
+                        "is_keyboard": true,
+                        "is_pointing_device": false,
+                        "product_id": 45927,
+                        "vendor_id": 1133
+                    },
+                    "ignore": false,
+                    "manipulate_caps_lock_led": true,
+                    "mouse_flip_horizontal_wheel": false,
+                    "mouse_flip_vertical_wheel": false,
+                    "mouse_flip_x": false,
+                    "mouse_flip_y": false,
+                    "mouse_swap_wheels": false,
+                    "mouse_swap_xy": false,
+                    "simple_modifications": [],
+                    "treat_as_built_in_keyboard": false
+                },
+                {
+                    "disable_built_in_keyboard_if_exists": false,
+                    "fn_function_keys": [],
+                    "game_pad_swap_sticks": false,
+                    "identifiers": {
+                        "is_game_pad": false,
+                        "is_keyboard": false,
+                        "is_pointing_device": true,
+                        "product_id": 45108,
+                        "vendor_id": 1133
+                    },
+                    "ignore": false,
+                    "manipulate_caps_lock_led": false,
+                    "mouse_flip_horizontal_wheel": false,
+                    "mouse_flip_vertical_wheel": true,
+                    "mouse_flip_x": false,
+                    "mouse_flip_y": false,
+                    "mouse_swap_wheels": false,
+                    "mouse_swap_xy": false,
+                    "simple_modifications": [],
+                    "treat_as_built_in_keyboard": false
+                },
+                {
+                    "disable_built_in_keyboard_if_exists": false,
+                    "fn_function_keys": [],
+                    "game_pad_swap_sticks": false,
+                    "identifiers": {
+                        "is_game_pad": false,
+                        "is_keyboard": false,
+                        "is_pointing_device": true,
+                        "product_id": 13330,
+                        "vendor_id": 14
+                    },
+                    "ignore": false,
+                    "manipulate_caps_lock_led": false,
+                    "mouse_flip_horizontal_wheel": false,
+                    "mouse_flip_vertical_wheel": true,
+                    "mouse_flip_x": false,
+                    "mouse_flip_y": false,
+                    "mouse_swap_wheels": false,
+                    "mouse_swap_xy": false,
+                    "simple_modifications": [],
+                    "treat_as_built_in_keyboard": false
+                },
+                {
+                    "disable_built_in_keyboard_if_exists": false,
+                    "fn_function_keys": [],
+                    "game_pad_swap_sticks": false,
+                    "identifiers": {
+                        "is_game_pad": false,
+                        "is_keyboard": false,
+                        "is_pointing_device": true,
+                        "product_id": 34328,
+                        "vendor_id": 44580
+                    },
+                    "ignore": false,
+                    "manipulate_caps_lock_led": false,
+                    "mouse_flip_horizontal_wheel": false,
+                    "mouse_flip_vertical_wheel": true,
+                    "mouse_flip_x": false,
+                    "mouse_flip_y": false,
+                    "mouse_swap_wheels": false,
+                    "mouse_swap_xy": false,
+                    "simple_modifications": [
+                        {
+                            "from": {
+                                "pointing_button": "button4"
+                            },
+                            "to": [
+                                {
+                                    "mouse_key": {
+                                        "horizontal_wheel": 32
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "from": {
+                                "pointing_button": "button5"
+                            },
+                            "to": [
+                                {
+                                    "mouse_key": {
+                                        "horizontal_wheel": -32
+                                    }
+                                }
+                            ]
+                        }
+                    ],
                     "treat_as_built_in_keyboard": false
                 }
             ],
