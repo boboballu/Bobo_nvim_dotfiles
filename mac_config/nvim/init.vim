@@ -116,7 +116,6 @@ let g:VM_maps['Find Subword Under'] = '<C-d>'           " replace visual C-n
 " settings below is based on this doc - http://vimcasts.org/episodes/tabs-and-spaces/
 :set tabstop=4				" redefine tab as 4 spaces		
 :set shiftwidth=4
-:set textwidth=0            " disabling the automatic break line feature
 ":set smarttab
 ":set softtabstop=4
 set expandtab
@@ -215,5 +214,21 @@ augroup psv_syntax
   autocmd BufNewFile,BufRead *.psv   set syntax=systemverilog
 augroup END
 
+" Disable annoying auto line break
+fu! DisableBr()
+    set wrap
+    set linebreak
+    set nolist  " list disables linebreak
+    set textwidth=0
+    set wrapmargin=0
+    set fo-=t
+endfu
+
+" Disable line breaks for all file types
+:au BufNewFile,BufRead *.* call DisableBr()
+
 let g:markdown_fenced_languages = ['python', 'c', 'cpp', 'lua', 'vim', 'yaml', 'make', 'systemverilog', 'rust']
 
+
+
+"
