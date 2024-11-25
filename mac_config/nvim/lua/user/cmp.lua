@@ -70,6 +70,7 @@ cmp.setup {
     	end, {"i","s",}),
 	},
 	sources = {
+        --{ name = "supermaven" },
    		{ name = "nvim_lsp" },
         { name = "luasnip" },
    		{ name = "buffer" },

@@ -48,7 +48,9 @@ Plug 'kevinhwang91/promise-async' " prerequisite : ufo plugin
 Plug 'kevinhwang91/nvim-ufo' " vscode like fold unfold
 Plug 'williamboman/mason.nvim' " lsp installer is no longer maintained. Moving to mason
 Plug 'jbyuki/venn.nvim' " ascii block diagrams
+Plug 'supermaven-inc/supermaven-nvim' " AI code completion plugin
 
+" Plug 'anuvyklack/hydra.nvim' " hydra for hydra plugin
 " disabled since it uses internet
 " Plug 'Exafunction/codeium.vim', { 'branch': 'main' } " copilot like  ai auto completion tool
 
@@ -229,6 +231,19 @@ endfu
 
 let g:markdown_fenced_languages = ['python', 'c', 'cpp', 'lua', 'vim', 'yaml', 'make', 'systemverilog', 'rust']
 
+" using spupermaven - hence disabling cmp for good
+:lua require('cmp').setup { enabled = false }
 
-
+" ----------- custom commands ---------"
+" Note: The commands ues cammel case
 "
+"command! CmpDisable execute lua require('cmp').setup { enabled = false } " this is not working
+:command CmpDisable :lua require('cmp').setup { enabled = false }
+:command CmpEnable :lua require('cmp').setup { enabled = true }
+" :command CmpAiDisable :lua requre('cmp').setup { sources = { { name = "nvim_lsp" }, { name = "luasnip" }, { name = "buffer" }, { name = "path" } } }
+
+"enable supermaven and / or cmp
+:command AiOnly execute ':SupermavenStart' | execute ':CmpDisable' 
+:command AiCmp execute ':SupermavenStart' | execute ':CmpEnable'
+:command AiDisable execute ':SupermavenStop' | execute ':CmpDisable'
+

@@ -7,8 +7,20 @@ end
 local presets = require("which-key.plugins.presets")
 presets.operators["v"] = nil
 
+-- require("which-key").opts.icons.mappings = false
 require("which-key").setup {
     -- your configuration comes here
     -- or leave it empty to use the default settings
     -- refer to the configuration section below
+
+    opts = {
+        icons = {
+            mappings = false,
+            keys = {
+                BS = "bs",
+                Esc = "esc",
+            },
+        },
+    },
+
 }
